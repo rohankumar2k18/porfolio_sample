@@ -1,0 +1,377 @@
+/* Reset default styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Set global font family */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styling */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+	color: #f4f4f4;
+}
+
+.separator {
+    height: 10px;
+    border-top: dotted 7px #ccc;
+    margin: 2rem auto;
+    width: 5%;
+  }
+
+/* Home section styling */
+/* #home {
+    background-image: url("heroImage.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  #home {
+    background-image: url('imageback.jpg');
+    /* background-color: #333; */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: 5px solid #f6d9d9; 
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-text {
+    text-align: left;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .btn-primary {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    /* margin-left: 50px; */
+    margin-top: 10rem;
+    border-radius: 0.7rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f39c12;
+    color: #fff;
+  }
+  
+  
+
+/* About section styling */
+.about {
+    padding: 6rem 0;
+  }
+  
+  .about-img {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .about-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .about-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-content h3 {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content ul {
+    list-style: none;
+    margin-left: 24px;
+    padding-left: 0;
+  }
+  
+  .about-content li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2.5rem;
+  }
+  
+  .about-content li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    border: 2px solid #28a745;
+    transition: all 0.3s ease;
+  }
+  
+  .about-content li:hover::before {
+    background-color: #28a745;
+    border-color: #f8f9fa;
+  }
+  
+
+/* Skills Section */
+.skills {
+  padding: 60px 0;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.section-title p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.card-deck {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: calc(33.33% - 20px);
+  background-color: #f4efef;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-body {
+  padding: 30px;
+  text-align: center;
+}
+
+.card i {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5;
+}
+
+
+
+    
+   /* Contact section styling */
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+}
+
+.contact-form {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+
+
+
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #222;
+}
+
+.contact h2{
+  text-align: center;
+}
+
+
+
+/* Footer styling */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	font-size: 1.2rem;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+	header nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav ul li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	#contact form {
+		width: 100%;
+	}
+}
+
+    
+    /* Footer styling */
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    footer p {
+    font-size: 1.2rem;
+    }
+    
+    /* Responsive styling */
+    @media screen and (max-width: 768px) {
+    header nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #contact form {
+        width: 100%;
+    }
+
+}
+
